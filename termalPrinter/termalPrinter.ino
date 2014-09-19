@@ -108,12 +108,11 @@ void loop() {
 
   if (readString.length() > 2) {
     
-    printer.setSize('S');
+    printer.setSize('M');
     printer.justify('L');
 
-    char firstChar = readString.charAt(0);
-    char secoundChar = readString.charAt(1);
     int passChar = 0;
+    char firstChar = readString.charAt(passChar);
     
     if(firstChar == 'L') {
       
@@ -132,6 +131,8 @@ void loop() {
       
     }
     
+    char secoundChar = readString.charAt(passChar);
+
     if(secoundChar == 'R') {
       
       printer.justify('R');
